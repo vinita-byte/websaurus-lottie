@@ -1,3 +1,6 @@
 node_modules/
 exports/mov/
 .DS_Store
+.vercel
+.vercel
+exports/websaurus-lotties.zip

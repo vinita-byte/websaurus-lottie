@@ -1,0 +1,82 @@
+# WebSaurus Lotties: full details
+
+Site: https://websaurus-lottie.vercel.app/
+Mascot: WebSaurus, the W2 mascot. A red dinosaur in chunky nerd glasses and a warm graphite hoodie with a white W2 on the chest. He cannot reach the keyboard, but he never drops his yellow highlighter. He marks the signal.
+Brand line: Tiny arms. Big takes.
+Personality: the smartest friend at the party, explaining the future with a straight face and one excellent joke. Punches up at the tool, never down at the learner. Translates, does not perform.
+
+## Colours
+- Signal Red #D40016 (skin)
+- Oxblood #6E0A12 (spots, tongue)
+- Ink #171615 (outlines)
+- Graphite #2B2826 (hoodie)
+- Paper #F4F4F2 (glasses, teeth, claws)
+- Yellow #FFD23F (highlighter, accent only)
+- Cream #EFE5DC (MP4 and GIF background)
+
+## Formats
+- Lottie JSON: 512 by 512, 60fps, transparent background (the avatar has its own ink circle). Plays in lottie web 5.12, lottie iOS, lottie Android, Webflow and LottieFiles.
+- .lottie: dotLottie v1 zip holding the same JSON. websaurus-all.lottie holds all eight, with idle as the active animation.
+- MP4: 1080 by 1080, H.264, 60fps, cream background, looped to at least six seconds.
+- GIF: 480 by 480, 30fps, cream background, loops forever.
+
+## Animations
+### Idle (4s)
+Full body. Breathing, tail sway, a glance to the side, two blinks, a smug brow raise and a highlighter twirl. The default loop.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-idle.json (28 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-idle.lottie (2 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-idle.mp4 (1236 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-idle.gif (1676 KB)
+
+### Hype jump (2s)
+Full body. Crouches, jumps, switches to the cackling face in the air, lands with a squash and raises a smug brow.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-hype.json (36 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-hype.lottie (3 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-hype.mp4 (1489 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-hype.gif (1226 KB)
+
+### Talk (2s)
+Head only. The mouth opens and closes at an uneven speaking rhythm, with a tongue, a gentle head bob, a blink and a brow raise. Made for voiceover and explainer videos.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-talk.json (20 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-talk.lottie (2 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-talk.mp4 (1070 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-talk.gif (1190 KB)
+
+### Smug (3s)
+Head only. The hot take face: eyebrow wiggle, a side eye toward the viewer, a slow head tilt and a blink.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-smug.json (13 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-smug.lottie (1 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-smug.mp4 (915 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-smug.gif (1516 KB)
+
+### Shocked (2s)
+Head only. The wait, what? face: a jolt upward, raised brows, shrinking pupils, a popping mouth, burst lines above the head and a tremble.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-shocked.json (14 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-shocked.lottie (1 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-shocked.mp4 (739 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-shocked.gif (736 KB)
+
+### Thinking (3s)
+Head only. The upgrade face: eyes look up and drift, the head tilts and three thought dots pop in one after another.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-thinking.json (13 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-thinking.lottie (1 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-thinking.mp4 (897 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-thinking.gif (1486 KB)
+
+### Cackling (2s)
+Head only. The useful chaos face: eyes squeezed shut and a big open mouth with a bobbing, shaking laugh.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-cackling.json (17 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-cackling.lottie (1 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-cackling.mp4 (1353 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-cackling.gif (1406 KB)
+
+### Avatar (3s)
+Head on an ink circle with a paper outline. The smug loop, for animated profile pictures on X and YouTube.
+- https://websaurus-lottie.vercel.app/lottie/websaurus-avatar.json (13 KB)
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-avatar.lottie (1 KB)
+- https://websaurus-lottie.vercel.app/exports/mp4/websaurus-avatar.mp4 (922 KB)
+- https://websaurus-lottie.vercel.app/exports/gif/websaurus-avatar.gif (1214 KB)
+
+## Bundles
+- https://websaurus-lottie.vercel.app/exports/websaurus-lotties.zip (18 MB): everything above
+- https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-all.lottie: all eight animations in one .lottie

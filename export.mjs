@@ -83,3 +83,9 @@ for (const n of names) {
   console.log(`${n}: ${frames} frames, mp4 ${loops}x loop`);
 }
 await browser.close();
+
+// ---------- download-all zip for the site (everything except the big MOVs) ----------
+const zip = path.join(OUT, 'websaurus-lotties.zip');
+fs.rmSync(zip, { force: true });
+execFileSync('zip', ['-q', '-r', '-X', zip, 'lottie', 'exports/dotlottie', 'exports/mp4', 'exports/gif'], { cwd: ROOT });
+console.log('zip done');

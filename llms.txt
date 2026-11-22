@@ -1,0 +1,21 @@
+# WebSaurus Lotties
+
+> Eight looping animations of WebSaurus, the W2 mascot: a red dinosaur in chunky nerd glasses and a graphite W2 hoodie who holds a yellow highlighter in his tiny hand. W2 is AI for the curious. Every animation downloads as Lottie JSON, .lottie, MP4 or GIF.
+
+## Pages
+- [Preview and downloads](https://websaurus-lottie.vercel.app/): all eight animations playing, with download buttons
+- [Full details](https://websaurus-lottie.vercel.app/llms-full.txt): every animation, file link, size and the brand colours
+
+## Animations (Lottie JSON)
+- [Idle](https://websaurus-lottie.vercel.app/lottie/websaurus-idle.json): 4s full body loop, breathing, blink, smug brow
+- [Hype jump](https://websaurus-lottie.vercel.app/lottie/websaurus-hype.json): 2s full body jump with a cackle in the air
+- [Talk](https://websaurus-lottie.vercel.app/lottie/websaurus-talk.json): 2s head loop with a moving mouth for voiceover
+- [Smug](https://websaurus-lottie.vercel.app/lottie/websaurus-smug.json): 3s head loop, the hot take face
+- [Shocked](https://websaurus-lottie.vercel.app/lottie/websaurus-shocked.json): 2s head loop, the "wait, what?" face
+- [Thinking](https://websaurus-lottie.vercel.app/lottie/websaurus-thinking.json): 3s head loop with thought dots
+- [Cackling](https://websaurus-lottie.vercel.app/lottie/websaurus-cackling.json): 2s head loop, laughing
+- [Avatar](https://websaurus-lottie.vercel.app/lottie/websaurus-avatar.json): 3s smug loop on an ink circle for profile pictures
+
+## Bundles
+- [Everything as a zip](https://websaurus-lottie.vercel.app/exports/websaurus-lotties.zip): JSON, .lottie, MP4 and GIF for all eight
+- [All eight in one .lottie](https://websaurus-lottie.vercel.app/exports/dotlottie/websaurus-all.lottie)

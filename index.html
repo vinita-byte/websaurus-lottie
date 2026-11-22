@@ -3,69 +3,184 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WebSaurus Lotties</title>
+<title>WebSaurus Lotties | W2 mascot animations</title>
+<meta name="description" content="Eight free looping animations of WebSaurus, the W2 mascot. Download each one as Lottie JSON, .lottie, MP4 or GIF.">
+<link rel="canonical" href="https://websaurus-lottie.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://websaurus-lottie.vercel.app/">
+<meta property="og:title" content="WebSaurus Lotties | W2 mascot animations">
+<meta property="og:description" content="Eight looping animations of WebSaurus, the W2 mascot. Download as Lottie JSON, .lottie, MP4 or GIF.">
+<meta property="og:image" content="https://websaurus-lottie.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://websaurus-lottie.vercel.app/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"WebSaurus Lotties","url":"https://websaurus-lottie.vercel.app/","description":"Eight looping Lottie animations of WebSaurus, the W2 mascot, with Lottie JSON, .lottie, MP4 and GIF downloads.","hasPart":[
+{"@type":"VideoObject","name":"WebSaurus idle","description":"Breathing, tail sway, a glance, blinks, a smug brow raise and a highlighter twirl.","contentUrl":"https://websaurus-lottie.vercel.app/exports/mp4/websaurus-idle.mp4","thumbnailUrl":"https://websaurus-lottie.vercel.app/og.png","uploadDate":"2026-11-22","duration":"PT8S"},
+{"@type":"VideoObject","name":"WebSaurus hype jump","description":"Winds up, jumps, cackles in the air and lands with a squash.","contentUrl":"https://websaurus-lottie.vercel.app/exports/mp4/websaurus-hype.mp4","thumbnailUrl":"https://websaurus-lottie.vercel.app/og.png","uploadDate":"2026-11-22","duration":"PT6S"}
+]}
+</script>
 <style>
   :root{--red:#D40016;--ox:#6E0A12;--ink:#171615;--graph:#2B2826;--paper:#F4F4F2;--cream:#EFE5DC;--muted:#4A4541}
   *{box-sizing:border-box}
+  html{color-scheme:light}
   body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Mono',monospace}
-  main{max-width:1280px;margin:0 auto;padding:56px 16px 80px}
-  header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:40px}
+  main{max-width:1280px;margin:0 auto;padding:56px 16px 48px}
+  header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
   h1{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(48px,8vw,96px);line-height:.9;letter-spacing:-.045em;text-transform:uppercase}
-  h1 span{color:var(--red)}
-  header p{margin:0;max-width:420px;font-size:15px;line-height:1.5;color:var(--muted)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+  h1 span,h2 span{color:var(--red)}
+  .intro{display:flex;flex-direction:column;gap:16px;max-width:440px}
+  .intro p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
+  .all{align-self:flex-start;background:var(--red);color:#fff;border-color:var(--red);box-shadow:4px 4px 0 var(--ox)}
+  .all:hover{background:var(--ox);border-color:var(--ox);color:#fff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;padding:0;margin:0;list-style:none}
   .card{background:var(--paper);border-radius:20px;padding:16px;box-shadow:6px 6px 0 var(--graph);display:flex;flex-direction:column;gap:12px}
-  .stage{aspect-ratio:1;border-radius:14px;background:var(--cream);cursor:pointer}
+  .stage{display:block;width:100%;aspect-ratio:1;border:0;padding:0;border-radius:14px;background:var(--cream);cursor:pointer;overflow:hidden}
+  .stage:focus-visible{outline:3px solid var(--red);outline-offset:3px}
   .card.dark .stage{background:var(--ink)}
-  .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
   h2{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;letter-spacing:-.02em}
   .meta{font-size:13px;color:var(--muted)}
   .card p{margin:0;font-size:14px;line-height:1.45}
-  a.dl,button{font:500 13px 'DM Mono',monospace;color:var(--ink);background:none;border:2px solid var(--ink);border-radius:999px;padding:10px 14px;min-height:44px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
-  a.dl:hover,button:hover{background:var(--ink);color:var(--paper)}
-  .actions{display:flex;gap:8px}
+  .dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:auto}
+  .btn{font:500 13px 'DM Mono',monospace;color:var(--ink);background:none;border:2px solid var(--ink);border-radius:999px;padding:8px 10px;min-height:44px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+  .btn:hover{background:var(--ink);color:var(--paper)}
+  .btn svg{width:14px;height:14px;flex:none}
+  .formats{margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;border-top:3px solid var(--ink);padding-top:28px}
+  .formats h3{margin:0 0 6px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase}
+  .formats p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+  footer{max-width:1280px;margin:0 auto;padding:0 16px 56px;font-size:13px;color:var(--muted)}
+  footer a{color:var(--red)}footer a:hover{color:var(--ox)}
 </style>
 </head>
 <body>
 <main>
   <header>
     <h1><span>Web</span>Saurus<br>Lotties</h1>
-    <p>Eight looping Lottie animations of the W2 mascot. Tap a stage to pause. Each file is plain Lottie JSON, ready for lottie web, iOS, Android, After Effects plugins or LottieFiles.</p>
+    <div class="intro">
+      <p>Eight looping animations of WebSaurus, the W2 mascot. Tap a stage to pause it. Grab any animation as Lottie JSON, .lottie, MP4 or GIF.</p>
+      <a class="btn all" href="exports/websaurus-lotties.zip" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>
+        Download everything (zip, 19 MB)
+      </a>
+    </div>
   </header>
-  <section class="grid" id="grid"></section>
+
+  <ul class="grid">
+    <li class="card" data-anim="idle">
+      <button class="stage" type="button" aria-label="Pause or play Idle"></button>
+      <div class="row"><h2>Idle</h2><span class="meta">4s · 60fps</span></div>
+      <p>Breathing, tail sway, a glance, a blink and a smug brow. The default loop.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-idle.json" download aria-label="Download Idle as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-idle.lottie" download aria-label="Download Idle as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-idle.mp4" download aria-label="Download Idle as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-idle.gif" download aria-label="Download Idle as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="hype">
+      <button class="stage" type="button" aria-label="Pause or play Hype jump"></button>
+      <div class="row"><h2>Hype jump</h2><span class="meta">2s · 60fps</span></div>
+      <p>Winds up, jumps, cackles in the air and lands with a squash.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-hype.json" download aria-label="Download Hype jump as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-hype.lottie" download aria-label="Download Hype jump as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-hype.mp4" download aria-label="Download Hype jump as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-hype.gif" download aria-label="Download Hype jump as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="talk">
+      <button class="stage" type="button" aria-label="Pause or play Talk"></button>
+      <div class="row"><h2>Talk</h2><span class="meta">2s · 60fps</span></div>
+      <p>Mouth flaps for voiceover and explainer videos.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-talk.json" download aria-label="Download Talk as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-talk.lottie" download aria-label="Download Talk as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-talk.mp4" download aria-label="Download Talk as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-talk.gif" download aria-label="Download Talk as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="smug">
+      <button class="stage" type="button" aria-label="Pause or play Smug"></button>
+      <div class="row"><h2>Smug</h2><span class="meta">3s · 60fps</span></div>
+      <p>The hot take. Eyebrow wiggle and a side eye.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-smug.json" download aria-label="Download Smug as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-smug.lottie" download aria-label="Download Smug as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-smug.mp4" download aria-label="Download Smug as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-smug.gif" download aria-label="Download Smug as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="shocked">
+      <button class="stage" type="button" aria-label="Pause or play Shocked"></button>
+      <div class="row"><h2>Shocked</h2><span class="meta">2s · 60fps</span></div>
+      <p>The "wait, what?" moment, with a jolt and a tremble.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-shocked.json" download aria-label="Download Shocked as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-shocked.lottie" download aria-label="Download Shocked as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-shocked.mp4" download aria-label="Download Shocked as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-shocked.gif" download aria-label="Download Shocked as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="thinking">
+      <button class="stage" type="button" aria-label="Pause or play Thinking"></button>
+      <div class="row"><h2>Thinking</h2><span class="meta">3s · 60fps</span></div>
+      <p>The upgrade. Looks up while thought dots pop in.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-thinking.json" download aria-label="Download Thinking as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-thinking.lottie" download aria-label="Download Thinking as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-thinking.mp4" download aria-label="Download Thinking as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-thinking.gif" download aria-label="Download Thinking as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card" data-anim="cackling">
+      <button class="stage" type="button" aria-label="Pause or play Cackling"></button>
+      <div class="row"><h2>Cackling</h2><span class="meta">2s · 60fps</span></div>
+      <p>The useful chaos. A head bobbing laugh.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-cackling.json" download aria-label="Download Cackling as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-cackling.lottie" download aria-label="Download Cackling as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-cackling.mp4" download aria-label="Download Cackling as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-cackling.gif" download aria-label="Download Cackling as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+    <li class="card dark" data-anim="avatar">
+      <button class="stage" type="button" aria-label="Pause or play Avatar"></button>
+      <div class="row"><h2>Avatar</h2><span class="meta">3s · 60fps</span></div>
+      <p>Animated profile picture on ink, for X and YouTube.</p>
+      <div class="dl">
+        <a class="btn" href="lottie/websaurus-avatar.json" download aria-label="Download Avatar as JSON"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>JSON</a>
+        <a class="btn" href="exports/dotlottie/websaurus-avatar.lottie" download aria-label="Download Avatar as .lottie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>.lottie</a>
+        <a class="btn" href="exports/mp4/websaurus-avatar.mp4" download aria-label="Download Avatar as MP4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>MP4</a>
+        <a class="btn" href="exports/gif/websaurus-avatar.gif" download aria-label="Download Avatar as GIF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M4 20h16"/></svg>GIF</a>
+      </div>
+    </li>
+  </ul>
+
+  <section class="formats" aria-label="File formats">
+    <div><h3>JSON</h3><p>Plain Lottie, 512 square, transparent. Works with lottie web, iOS, Android, Webflow and LottieFiles.</p></div>
+    <div><h3>.lottie</h3><p>The compressed dotLottie version. The zip also has one file holding all eight.</p></div>
+    <div><h3>MP4</h3><p>1080 square on the cream background, looped to six seconds or more so it plays well on social.</p></div>
+    <div><h3>GIF</h3><p>480 square at 30fps, loops forever. For chats, docs and email.</p></div>
+  </section>
 </main>
+<footer>Made for <strong>W2</strong>, AI for the curious. Machine readable index: <a href="llms.txt">llms.txt</a></footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 <script>
-const items = [
-  ['idle', 'Idle', 'Breathing, tail sway, a glance, a blink and a smug brow. The default loop.'],
-  ['hype', 'Hype jump', 'Winds up, jumps, cackles in the air and lands with a squash.'],
-  ['talk', 'Talk', 'Mouth flaps for voiceover and explainer videos.'],
-  ['smug', 'Smug', 'The hot take. Eyebrow wiggle and a side eye.'],
-  ['shocked', 'Shocked', 'The "wait, what?" moment, with a jolt and a tremble.'],
-  ['thinking', 'Thinking', 'The upgrade. Looks up, thought dots pop in.'],
-  ['cackling', 'Cackling', 'The useful chaos. Head bobbing laugh.'],
-  ['avatar', 'Avatar', 'Animated profile picture on ink, for X and YouTube.', true],
-];
-const grid = document.getElementById('grid');
-for (const [id, title, desc, dark] of items) {
-  const file = `lottie/websaurus-${id}.json`;
-  const card = document.createElement('article');
-  card.className = 'card' + (dark ? ' dark' : '');
-  card.innerHTML = `<div class="stage" role="button" tabindex="0" aria-label="Pause or play ${title}"></div>
-    <div class="row"><h2>${title}</h2><span class="meta"></span></div>
-    <p>${desc}</p>
-    <div class="actions"><a class="dl" href="${file}" download>Download JSON</a></div>`;
-  grid.appendChild(card);
+for (const card of document.querySelectorAll('.card')) {
+  const id = card.dataset.anim;
   const stage = card.querySelector('.stage');
-  const anim = lottie.loadAnimation({ container: stage, renderer: 'svg', loop: true, autoplay: true, path: file });
-  anim.addEventListener('DOMLoaded', () => {
-    card.querySelector('.meta').textContent = `${(anim.totalFrames / anim.frameRate).toFixed(0)}s · ${anim.frameRate}fps`;
-  });
-  const toggle = () => anim.isPaused ? anim.play() : anim.pause();
-  stage.addEventListener('click', toggle);
-  stage.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  if (window.lottie) {
+    const anim = lottie.loadAnimation({ container: stage, renderer: 'svg', loop: true, autoplay: true, path: `lottie/websaurus-${id}.json` });
+    stage.addEventListener('click', () => anim.isPaused ? anim.play() : anim.pause());
+  }
 }
 </script>
 </body>

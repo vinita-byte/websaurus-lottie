@@ -1,6 +1,6 @@
 # WebSaurus Lotties
 
-Looping Lottie animations of WebSaurus, the W2 mascot (red T-rex, nerd glasses, graphite W2 hoodie, yellow highlighter).
+Looping Lottie animations of WebSaurus, the W2 mascot (a red dinosaur in nerd glasses, graphite W2 hoodie, yellow highlighter).
 
 | Animation | Length | What it does |
 | --- | --- | --- |
@@ -20,6 +20,10 @@ Looping Lottie animations of WebSaurus, the W2 mascot (red T-rex, nerd glasses, 
 - `exports/mp4/`: 1080×1080 H.264 on brand cream, looped to 6s or more for social
 - `exports/gif/`: 480×480, 30fps, loops forever
 - `exports/mov/`: 1080×1080 ProRes 4444 with transparency for video editors (not in git, regenerate with `node export.mjs`)
+
+## Live site
+
+https://websaurus-lottie.vercel.app has every animation playing, with downloads. It is a static deploy from this folder (`vercel deploy --prod`); `.vercelignore` keeps the scripts and MOVs out.
 
 ## Editing
 
