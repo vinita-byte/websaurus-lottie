@@ -1,0 +1,18 @@
+{
+  "name": "websaurus-lottie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "export": "node export.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "WebSaurus mascot Lottie animations",
+  "devDependencies": {
+    "lottie-web": "^5.12.2",
+    "puppeteer-core": "^23.11.1"
+  },
+  "private": true
+}
