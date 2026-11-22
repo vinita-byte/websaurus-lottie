@@ -1,8 +1,41 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo no install needed",
+  "buildCommand": "python3 make-zip.py",
+  "outputDirectory": ".",
   "cleanUrls": false,
   "headers": [
-    { "source": "/(.*)\\.lottie", "headers": [{ "key": "Content-Type", "value": "application/zip" }] },
-    { "source": "/(.*)\\.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] },
-    { "source": "/(lottie|exports)/(.*)", "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }, { "key": "Cache-Control", "value": "public, max-age=86400" }] }
+    {
+      "source": "/(.*)\\.lottie",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/zip"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/(lottie|exports)/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
   ]
 }

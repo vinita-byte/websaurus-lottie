@@ -23,7 +23,7 @@ Looping Lottie animations of WebSaurus, the W2 mascot (a red dinosaur in nerd gl
 
 ## Live site
 
-https://websaurus-lottie.vercel.app has every animation playing, with downloads. It is a static deploy from this folder (`vercel deploy --prod`); `.vercelignore` keeps the scripts and MOVs out.
+https://websaurus-lottie.vercel.app has every animation playing, with downloads. The Vercel project is connected to this repo, so every push to `main` deploys to production and other branches get preview URLs. Each deploy runs `make-zip.py` to build the download-all zip; `.vercelignore` keeps the scripts and MOVs out.
 
 ## Editing
 
